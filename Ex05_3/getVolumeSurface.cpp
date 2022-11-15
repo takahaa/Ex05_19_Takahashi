@@ -9,7 +9,8 @@ void getVolumeSurface(BOX* box) {
 bool isSendable(BOX* box) {
 	double size = box->x + box->y + box->z;
 	int standard[] = { 60,80,100,120,140,160,180,200 };
-
+	
+	//_countof()で配列の最後まで
 	for (int i = 0; size <= standard[7]; i++) 
 	{
 		if (size <= standard[i])
